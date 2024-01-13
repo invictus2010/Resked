@@ -5,7 +5,7 @@
   "description": "Automatically clicks the 'Create New IDT Request' button",
   "content_scripts":[
     {
-      "matches": ["https://www.nsips.cloud.navy.mil/psp/PRDTRX01_3/EMPLOYEE/HRMS/c/ESR_SS_MNU.F_EDM_IDT_RQST_CMP.GBL?Page=F_EDM_IDT_RQST_PG&Action=A"],
+      "matches": ["https://www.nsips.cloud.navy.mil/psp/PRDTRX01_4/EMPLOYEE/HRMS/c/ESR_SS_MNU.F_EDM_IDT_RQST_CMP.GBL?Page=F_EDM_IDT_RQST_PG&Action=A"],
       "js": ["content.js"]
     }
   ],
