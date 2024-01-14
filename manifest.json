@@ -3,14 +3,23 @@
   "name": "ReskedMe",
   "version": "1.0",
   "description": "Automatically clicks the 'Create New IDT Request' button",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
   "content_scripts":[
     {
-      "matches": ["https://www.nsips.cloud.navy.mil/psp/PRDTRX01_4/EMPLOYEE/HRMS/c/ESR_SS_MNU.F_EDM_IDT_RQST_CMP.GBL?Page=F_EDM_IDT_RQST_PG&Action=A"],
+      "matches": ["https://www.nsips.cloud.navy.mil/*F_EDM_IDT_RQST_CMP*"],
       "js": ["content.js"]
     }
   ],
   "permissions": [
     "activeTab",
-    "scripting"
+    "scripting",
+    "storage"
   ]
 }
