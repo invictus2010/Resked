@@ -7,8 +7,7 @@ No information is collected or shared.
 
 ## Setting up Extension
 1. Download the files.
-2. Modify the `pocPhone`, `pocName`, `pocEmail` values in `content.js` to match your Point of Contact information.
-3. Install the Chrome Extension (see below).
+2. Install the Chrome Extension (see below).
 
 ## Installing a Google Chrome Extension in Developer Mode
 
@@ -23,6 +22,14 @@ To install a Google Chrome extension in developer mode, follow these steps:
 4. Click on the "Load unpacked" button and select the folder where you extracted the extension's source code.
 
 5. The extension will be installed and ready to use. You can find it in the list of installed extensions on the Extensions page.
+
+## Configuring your Inputs
+
+1. Open the extension's input panel by clicking the extension icon in the toolbar.
+
+2. Input your values and click "Save".
+
+3. You should see the updated values displayed on the extension's input panel.
 
 ## Future Enhancements
 NSIPS is tough and uses old tech, so ChatGPT isn't always immediately right. Specifically, the site loads all of the buttons and inputs within an iFrame. 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NSIPS AutoFill</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 10px;
+        }
+        .success {
+            color: green;
+        }
+        .hidden {
+            display: none;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .label-container {
+            display: table;
+            margin-bottom: .5em;
+        }
+        input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+        span {
+            font-size: smaller;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+        <div class='container'>
+            <div class="label-container">
+                <label for="username">Enter your name: <span id='current_username'></span></label>
+                <input type="text" id="username" />
+            </div>
+
+            <div class="label-container">
+                <label for="email">Enter your email: <span id='current_email'></span></label>
+                <input type="text" id="email" />
+            </div>
+
+            <div class="label-container">
+                <label for="phone">Enter your phone number: <span id='current_phone'></span></label>
+                <input type="text" id="phone" />
+            </div>
+        </div>
+    <button id="saveBtn">Save</button>
+    <div id="status" class="success hidden">Saved!</div>
+    <script src="popup.js"></script>
+</body>
+</html>
