@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "ReskedMe",
   "version": "1.0",
-  "description": "Automatically clicks the 'Create New IDT Request' button",
+  "description": "Resked your Navy reserve drills faster!",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
@@ -19,7 +19,6 @@
   ],
   "permissions": [
     "activeTab",
-    "scripting",
-    "storage"
+    "scripting"
   ]
 }
