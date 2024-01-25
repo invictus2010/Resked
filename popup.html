@@ -2,54 +2,30 @@
 <html>
 <head>
     <title>NSIPS AutoFill</title>
-    <style>
-        body {
-            width: 300px;
-            padding: 10px;
-        }
-        .success {
-            color: green;
-        }
-        .hidden {
-            display: none;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-        }
-        .label-container {
-            display: table;
-            margin-bottom: .5em;
-        }
-        input {
-            width: 100%;
-            box-sizing: border-box;
-        }
-        span {
-            font-size: smaller;
-            color: gray;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-        <div class='container'>
-            <div class="label-container">
-                <label for="username">Enter your POC's name: <span id='current_username'></span></label>
-                <input type="text" id="username" />
-            </div>
-
-            <div class="label-container">
-                <label for="email">Enter your POC's email: <span id='current_email'></span></label>
-                <input type="text" id="email" />
-            </div>
-
-            <div class="label-container">
-                <label for="phone">Enter your POC's phone number: <span id='current_phone'></span></label>
-                <input type="text" id="phone" />
-            </div>
+<body class="bg-blue-100 p-6">
+    <div class='container mx-auto'>
+        <div class="mb-4">
+            <label for="username" class="block text-sm font-medium text-gray-700">Enter your POC's name:</label>
+            <input type="text" id="username" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
+            <span id='current_username' class="text-xs text-gray-500"></span>
         </div>
-    <button id="saveBtn">Save</button>
-    <div id="status" class="success hidden">Saved!</div>
+
+        <div class="mb-4">
+            <label for="email" class="block text-sm font-medium text-gray-700">Enter your POC's email:</label>
+            <input type="text" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
+            <span id='current_email' class="text-xs text-gray-500"></span>
+        </div>
+
+        <div class="mb-4">
+            <label for="phone" class="block text-sm font-medium text-gray-700">Enter your POC's phone number:</label>
+            <input type="text" id="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" />
+            <span id='current_phone' class="text-xs text-gray-500"></span>
+        </div>
+    </div>
+    <button id="saveBtn" class="px-4 py-2 bg-blue-500 text-white font-bold rounded hover:bg-blue-700">Save</button>
+    <div id="status" class="hidden text-sm text-green-500">Saved!</div>
     <script src="popup.js"></script>
 </body>
 </html>
